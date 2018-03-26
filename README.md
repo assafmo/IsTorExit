@@ -22,4 +22,4 @@ IsTorExit("1.1.1.1").then(console.log); // false
 ```
 
 The first usage of `IsTorExit` downloads the internal DB.  
-You can use `refresh` to update the internal DB.
+Use `refresh` to update the internal DB.
