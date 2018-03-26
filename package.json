@@ -1,6 +1,6 @@
 {
   "name": "istorexit",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Check if IP is a Tor exit node",
   "main": "main.js",
   "bin": {
