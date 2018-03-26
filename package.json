@@ -1,9 +1,24 @@
 {
   "name": "istorexit",
-  "version": "0.2.0",
+  "version": "0.2.1",
+  "description": "Check if IP is a Tor exit node",
+  "main": "main.js",
+  "bin": {
+    "istorexit": "./main.js"
+  },
   "dependencies": {
     "request": "^2.85.0",
     "request-promise": "^4.2.2",
     "validate-ip-node": "^1.0.6"
-  }
+  },
+  "keywords": ["tor", "exit", "tor exit"],
+  "author": "assafmo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/assafmo/IsTorExit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/assafmo/IsTorExit/issues"
+  },
+  "license": "MIT"
 }
