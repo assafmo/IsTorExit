@@ -1,7 +1,7 @@
 {
   "name": "istorexit",
   "version": "0.4.2",
-  "description": "Check if IP is a Tor exit node",
+  "description": "Check if an IP is a Tor exit node",
   "main": "main.js",
   "bin": {
     "istorexit": "./main.js"
@@ -10,11 +10,7 @@
     "request": "^2.85.0",
     "request-promise": "^4.2.2"
   },
-  "keywords": [
-    "tor",
-    "exit",
-    "tor exit"
-  ],
+  "keywords": ["tor", "exit", "tor exit"],
   "author": "assafmo",
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 # IsTorExit
 
-Check if IP is a Tor exit node.
+Check if an IP is a Tor exit node.
 
 [![npm version](https://badge.fury.io/js/istorexit.svg)](https://badge.fury.io/js/istorexit)
 
