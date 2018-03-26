@@ -12,5 +12,5 @@ istorexit ip1 [ip2...]
 
 ```javascript
 const IsTorExit = require("istorexit");
-console.log(IsTorExit("104.200.20.46")); // true
+IsTorExit("104.200.20.46").then(console.log); // true
 ```
