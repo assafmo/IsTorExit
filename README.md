@@ -7,7 +7,7 @@ npm install -g istorexit
 # Usage
 
 ```bash
-istorexit ip1 [ip2...]
+istorexit [ip...]
 ```
 
 ```javascript
