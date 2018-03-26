@@ -21,4 +21,4 @@ IsTorExit("104.200.20.46").then(console.log); // true
 IsTorExit("1.1.1.1").then(console.log); // false
 ```
 
-If used wite `require` then the internal DB get updated every 5 minutes.
+If used wite `require` then the internal DB gets updated every 5 minutes.
