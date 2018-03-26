@@ -1,16 +1,8 @@
 #!/usr/bin/env node
 const request = require("request-promise");
-const validateIP = require("validate-ip-node");
 
 let exitNodes;
 async function isTorExit(ip, print) {
-  if (!validateIP(ip)) {
-    if (print) {
-      console.log(ip, false);
-    }
-    return false;
-  }
-
   if (!exitNodes) {
     const exitNodesText = await request(
       "https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=8.8.8.8"

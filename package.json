@@ -8,14 +8,9 @@
   },
   "dependencies": {
     "request": "^2.85.0",
-    "request-promise": "^4.2.2",
-    "validate-ip-node": "^1.0.6"
+    "request-promise": "^4.2.2"
   },
-  "keywords": [
-    "tor",
-    "exit",
-    "tor exit"
-  ],
+  "keywords": ["tor", "exit", "tor exit"],
   "author": "assafmo",
   "repository": {
     "type": "git",
