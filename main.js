@@ -3,9 +3,11 @@ const request = require("request-promise");
 const validateIP = require("validate-ip-node");
 
 let exitNodes;
-async function isTorExit(ip) {
+async function isTorExit(ip, print) {
   if (!validateIP(ip)) {
-    console.log(ip, false);
+    if (print) {
+      console.log(ip, false);
+    }
     return false;
   }
 
@@ -23,14 +25,18 @@ async function isTorExit(ip) {
   }
 
   const answer = exitNodes.has(ip);
-  console.log(ip, answer);
+  if (print) {
+    console.log(ip, answer);
+  }
   return answer;
 }
+
+module.exports = isTorExit;
 
 if (process.argv.length > 2) {
   (async () => {
     for (const ip of process.argv.slice(2)) {
-      isTorExit(ip);
+      isTorExit(ip, true);
     }
   })();
 }
