@@ -2,18 +2,23 @@
 const request = require("request-promise");
 
 let exitNodes;
+async function refresh() {
+  const exitNodesText = await request(
+    "https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=8.8.8.8"
+  );
+
+  exitNodes = new Set(
+    exitNodesText
+      .split("\n")
+      .filter(line => line[0] != "#")
+      .map(line => line.replace(/\r/g, ""))
+  );
+}
+setInterval(refresh, 5 * 1000 * 60 /*5 minutes*/);
+
 async function isTorExit(ip, print) {
   if (!exitNodes) {
-    const exitNodesText = await request(
-      "https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=8.8.8.8"
-    );
-
-    exitNodes = new Set(
-      exitNodesText
-        .split("\n")
-        .filter(line => line[0] != "#")
-        .map(line => line.replace(/\r/g, ""))
-    );
+    await refresh();
   }
 
   const answer = exitNodes.has(ip);
