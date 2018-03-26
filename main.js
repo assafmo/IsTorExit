@@ -14,7 +14,6 @@ async function refresh() {
       .map(line => line.replace(/\r/g, ""))
   );
 }
-const refreshInterval = setInterval(refresh, 5 * 1000 * 60 /*5 minutes*/);
 
 async function isTorExit(ip, print) {
   if (!exitNodes) {
@@ -28,10 +27,9 @@ async function isTorExit(ip, print) {
   return answer;
 }
 
-module.exports = isTorExit;
+module.exports = { isTorExit, refresh };
 
 if (require.main === module) {
-  clearInterval(refreshInterval);
   (async () => {
     for (const ip of process.argv.slice(2)) {
       isTorExit(ip, true);

@@ -16,9 +16,10 @@ istorexit [ip...]
 ## NodeJs
 
 ```javascript
-const IsTorExit = require("istorexit");
+const { IsTorExit, refresh } = require("istorexit");
 IsTorExit("104.200.20.46").then(console.log); // true
 IsTorExit("1.1.1.1").then(console.log); // false
 ```
 
-If used wite `require` then the internal DB gets updated every 5 minutes.
+The first usage of `IsTorExit` downloads the internal DB.  
+You can use `refresh` to update the internal DB.
