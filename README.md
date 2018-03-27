@@ -16,10 +16,7 @@ istorexit [ip...]
 ## NodeJs
 
 ```javascript
-const { IsTorExit, refresh } = require("istorexit");
+const IsTorExit = require("istorexit");
 IsTorExit("104.200.20.46").then(console.log); // true
 IsTorExit("1.1.1.1").then(console.log); // false
 ```
-
-The first usage of `IsTorExit` downloads the internal DB.  
-Use `refresh` to update the internal DB.
