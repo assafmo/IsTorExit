@@ -2,6 +2,7 @@
 const { promisify } = require("util");
 const lookup = promisify(require("dns").lookup);
 
+// https://www.torproject.org/projects/tordnsel.html
 async function isTorExit(ip, print) {
   let address;
   try {
