@@ -6,7 +6,9 @@
   "bin": {
     "istorexit": "./main.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "flags": "^0.1.3"
+  },
   "keywords": [
     "tor",
     "exit",
