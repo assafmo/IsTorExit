@@ -14,14 +14,14 @@ function reverseIp(ip) {
 
 // https://www.torproject.org/projects/tordnsel.html
 async function isTorExit(ipToCheckIfTor, ipDest, portDest, print) {
-  let address;
+  let outputAddress;
   try {
     const result = await lookup(
       `${reverseIp(ipToCheckIfTor)}.${portDest || defaultPortDest}.${reverseIp(
         ipDest || defaultIpDest
       )}.ip-port.exitlist.torproject.org`
     );
-    address = result.address;
+    outputAddress = result.address;
   } catch (e) {
     if (e.code == "ENOTFOUND") {
       if (print) {
@@ -33,14 +33,15 @@ async function isTorExit(ipToCheckIfTor, ipDest, portDest, print) {
     }
   }
 
-  if (!address) {
+  if (!outputAddress) {
     if (print) {
       console.log(ipToCheckIfTor, false);
     }
     return false;
   }
 
-  const answer = address.startsWith("127.0.0.") && address != "127.0.0.1";
+  const answer =
+    outputAddress.startsWith("127.0.0.") && outputAddress != "127.0.0.1";
   if (print) {
     console.log(ipToCheckIfTor, answer);
   }
