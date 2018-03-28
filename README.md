@@ -52,3 +52,7 @@ IsTorExit("1.1.1.1", "185.60.216.35").then(console.log); // false
 IsTorExit("104.200.20.46", "185.60.216.35", 80).then(console.log); // true
 IsTorExit("1.1.1.1", "185.60.216.35", 80).then(console.log); // false
 ```
+
+# License
+
+[MIT](/LICENSE)
