@@ -64,6 +64,13 @@ if (require.main === module) {
   flags.defineMultiString("ip", null, "The IP to check if is a Tor exit node");
   flags.parse();
 
+  const ips = flags.get("ip");
+  if (!ips) {
+    flags.help();
+    console.log("Must provide at least one --ip");
+    process.exit(1);
+  }
+
   (async () => {
     for (const ip of flags.get("ip")) {
       if (ip == null) {
