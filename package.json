@@ -7,11 +7,7 @@
     "istorexit": "./main.js"
   },
   "dependencies": {},
-  "keywords": [
-    "tor",
-    "exit",
-    "tor exit"
-  ],
+  "keywords": ["tor", "exit", "tor exit"],
   "author": "assafmo",
   "repository": {
     "type": "git",
