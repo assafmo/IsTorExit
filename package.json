@@ -1,13 +1,17 @@
 {
   "name": "istorexit",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "Check if an IP is a Tor exit node",
   "main": "main.js",
   "bin": {
     "istorexit": "./main.js"
   },
   "dependencies": {},
-  "keywords": ["tor", "exit", "tor exit"],
+  "keywords": [
+    "tor",
+    "exit",
+    "tor exit"
+  ],
   "author": "assafmo",
   "repository": {
     "type": "git",
@@ -23,7 +27,6 @@
     "request-promise": "^4.2.2"
   },
   "scripts": {
-    "test":
-      "curl https://check.torproject.org/cgi-bin/TorBulkExitList.py -G -d ip=216.58.206.110 -d port=443 > ips.txt && jest"
+    "test": "curl https://check.torproject.org/cgi-bin/TorBulkExitList.py -G -d ip=216.58.206.110 -d port=443 > ips.txt && jest"
   }
 }
