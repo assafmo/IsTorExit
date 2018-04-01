@@ -18,24 +18,27 @@ describe("Not exit nodes", () => {
   });
 });
 
-describe("Exit nodes", () => {
-  // const ips = require("fs")
-  //   .readFileSync(require("path").join(__dirname, "ips.txt"), {
-  //     encoding: "utf8"
-  //   })
-  //   .split("\n")
-  //   .map(line => line.replace(/\r/g, "").trim())
-  //   .filter(line => line[0] != "#" && line)
-  //   .slice(0, 100);
-  // for (const ip of ips) {
-  //   test(
-  //     ip,
-  //     done => {
-  //       IsTorExit(ip)
-  //         .then(result => expect(result).toBe(true))
-  //         .then(done);
-  //     },
-  //     15000
-  //   );
-  // }
-});
+// TODO: make it work. about 5% of the ips from the exported list
+// are returning as false
+
+// describe("Exit nodes", () => {
+// const ips = require("fs")
+//   .readFileSync(require("path").join(__dirname, "ips.txt"), {
+//     encoding: "utf8"
+//   })
+//   .split("\n")
+//   .map(line => line.replace(/\r/g, "").trim())
+//   .filter(line => line[0] != "#" && line)
+//   .slice(0, 100);
+// for (const ip of ips) {
+//   test(
+//     ip,
+//     done => {
+//       IsTorExit(ip)
+//         .then(result => expect(result).toBe(true))
+//         .then(done);
+//     },
+//     15000
+//   );
+// }
+// });
