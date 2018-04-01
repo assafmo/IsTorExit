@@ -2,7 +2,7 @@
 
 Check if an IP is a Tor exit node.
 
-[![npm version](https://badge.fury.io/js/istorexit.svg)](https://badge.fury.io/js/istorexit) [![CircleCI](https://circleci.com/gh/assafmo/IsTorExit.svg?style=shield&circle-token=5a80e4447cbbdbd5d740a1679fee6a7799f22da7)](https://circleci.com/gh/assafmo/IsTorExit)
+[![npm version](https://badge.fury.io/js/istorexit.svg)](https://badge.fury.io/js/istorexit) [![CircleCI](https://circleci.com/gh/assafmo/IsTorExit.svg?style=shield&circle-token=623500f4b3622a23c93c0141dcd8f3f5e9e17ee6)](https://circleci.com/gh/assafmo/IsTorExit)
 
 # Usage
 
