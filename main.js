@@ -72,6 +72,11 @@ OPTIONS
   -h, --help
       Print this message and exit`;
 
+  if (cmdArgs.length == 0) {
+    console.log(helpMesg);
+    process.exit(0);
+  }
+
   let destIp = defaultDestinationIp;
   let destPort = defaultDestinationPort;
   const ips = [];
