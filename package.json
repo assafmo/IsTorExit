@@ -22,9 +22,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "jest": "^22.4.3",
-    "request": "^2.85.0",
-    "request-promise": "^4.2.2"
+    "jest": "^24.8.0"
   },
   "scripts": {
     "test": "curl https://check.torproject.org/cgi-bin/TorBulkExitList.py -G -d ip=216.58.206.110 -d port=443 > ips.txt && jest"

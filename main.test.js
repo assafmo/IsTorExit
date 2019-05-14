@@ -1,5 +1,4 @@
 const IsTorExit = require(require("path").join(__dirname, "main.js"));
-const request = require("request-promise");
 
 const defaultDestinationIp = "216.58.206.110"; // google.com
 const defaultDestinationPort = 443; // https
