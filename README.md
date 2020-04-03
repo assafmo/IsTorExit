@@ -29,8 +29,7 @@ OPTIONS
 
   -h, --help
       Print this message and exit
-$ istorexit --dest-ip 185.60.216.35 --dest-port 443 1.0.1.1 1.1.1.1 1.2.1.1 1.3.1.1 1.4.1.1 1.5.1.1 104.200.20.46
-1.0.1.1 false
+$ istorexit --dest-ip 185.60.216.35 --dest-port 443 1.1.1.1 1.2.1.1 1.3.1.1 1.4.1.1 1.5.1.1 104.200.20.46
 1.1.1.1 false
 1.2.1.1 false
 1.3.1.1 false
