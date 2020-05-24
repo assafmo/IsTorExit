@@ -25,6 +25,6 @@
     "jest": "^25.1.0"
   },
   "scripts": {
-    "test": "curl https://check.torproject.org/cgi-bin/TorBulkExitList.py -G -d ip=216.58.206.110 -d port=443 > ips.txt && jest"
+    "test": "curl https://check.torproject.org/cgi-bin/TorBulkExitList.py -L -G -d ip=216.58.206.110 -d port=443 > ips.txt && jest"
   }
 }

@@ -3,13 +3,10 @@ const { promisify } = require("util");
 const lookup = promisify(require("dns").lookup);
 
 function reverseIp(ip) {
-  return ip
-    .split(".")
-    .reverse()
-    .join(".");
+  return ip.split(".").reverse().join(".");
 }
 
-// https://www.torproject.org/projects/tordnsel.html
+// https://github.com/assafmo/IsTorExit/pull/4
 async function isTorExit(ip, print) {
   let outputAddress;
   try {
