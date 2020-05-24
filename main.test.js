@@ -1,11 +1,8 @@
 const IsTorExit = require(require("path").join(__dirname, "main.js"));
 
-const defaultDestinationIp = "216.58.206.110"; // google.com
-const defaultDestinationPort = 443; // https
-
 describe("Not exit nodes", () => {
   test("google", async done => {
-    const result = await IsTorExit(defaultDestinationIp);
+    const result = await IsTorExit("216.58.206.110");
     expect(result).toBe(false);
     done();
   });
